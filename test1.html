@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Holland & Sherry </title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        text-align: center;
+        padding: 8px;
+        border: 1px solid #dddddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      #search_input {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+      #myBtn{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <form onsubmit="return false;">
+      <input type="text" id="search_input" placeholder="輸入貨號">
+      <button type="button" id="myBtn" onclick="searchTable()">查詢</button>
+    </form>
+
+    <font size="5"></font>
+    <table id="product_table">
+      <thead> 
+        <tr>
+          <th>編號   </th>
+          <th>庫存狀態</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>480-1   </td>  
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-2   </td> 
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-3   </td>
+          <td>有庫存(庫存不多，請打電話再做確認)</td>
+        </tr>
+        <tr>
+          <td>480-4   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-5   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-6   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-7   </td>  
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-8   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-9   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-10   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-11   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-12   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-13   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-14   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-15   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-16   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-17   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-18   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-19   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-20   </td>
+          <td>庫存0</td>
+        </tr>
+        <tr>
+          <td>480-21   </td>
+          <td>庫存0</td>
+        </tr>
+        <tr>
+          <td>480-22   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-23   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-24   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-25   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-26   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-27   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-28   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-29   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-30   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-31   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-32   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-33   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-34   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-35   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-36   </td>
+          <td>有庫存(庫存不多，請打電話再做確認)</td>
+        </tr>
+        <tr>
+          <td>480-37   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-38   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-39   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-40   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-41   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-42   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-43   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-44   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-45   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-46   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-47   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-48   </td>
+          <td>庫存0</td>
+        </tr>
+        <tr>
+          <td>480-49   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-50   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-51   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-52   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-53   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-54   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-55   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-56   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-57   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-58   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-59   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-60   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-61   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-62   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-63   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-64   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-65   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-66   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-67   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-68   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-69   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-70   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-71   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-72   </td>
+          <td>有庫存</td>
+        </tr>
+        <tr>
+          <td>480-73   </td>
+          <td>有庫存(庫存不多，請打電話再做確認)</td>
+        </tr>
+        
+        
+        
+      </tbody>
+    </table>
+  </body>
+</html>
+
+
+
+
+<script>
+
+
+
+  function searchTable() {
+    
+    var input, filter, table, tr, td, i, j, visible;
+    input = document.getElementById("search_input");
+    filter = input.value.trim(); 
+    table = document.getElementById("product_table");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      visible = false;
+      td = tr[i].getElementsByTagName("td");
+      for (j = 0; j < td.length; j++) {
+        if (td[j].textContent.trim() === filter) {
+          visible = true;
+          break;
+        }
+      }
+      tr[i].style.display = visible ? "" : "none";
+    }
+    
+  }
+
+  document.getElementById("search_input").addEventListener("keyup", function(e) {
+        if (e.keyCode == 13) {
+            document.getElementById("myBtn").click();
+        }
+    });
+
+  
+ 
+
+
+</script>
+
+
+
+
